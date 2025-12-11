@@ -25,3 +25,16 @@
 # Operation finished.
 
 # write your code here:
+
+try:
+  number1 = int(input("Type in two numbers: "))
+  number2 = int(input("Type in two numbers "))
+  number1/number2
+except ValueError:
+   print("You need to type a number")
+except:
+   print("Something went wrong")
+else:
+   print("All is good!")
+finally:
+   print("Operation successful!!!")
