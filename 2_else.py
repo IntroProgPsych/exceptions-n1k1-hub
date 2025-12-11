@@ -22,3 +22,13 @@
 # Attempt finished.
 
 # write your code here:
+# 
+# 
+try:
+  number = int(input("Type in a number: "))
+except ValueError:
+  print("Something went wrong")
+except:
+  print("Conversion succesful!")
+finally:
+   print("Attempt finished.")

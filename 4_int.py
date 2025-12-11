@@ -27,6 +27,18 @@ prompt = "Please type in a number: "
 lower = 5
 upper = 10
 # write your code here:
+def read_input(prompt, lower, upper):
+    while True:
+        try:
+            user_input = int(input(prompt))
+            if user_input < lower or user_input > upper:
+                print(f"The number must be between {lower} and {upper}.")
+            else:
+                return user_input
+        except ValueError:
+            print("You must type a valid integer!")
+        finally:
+            print("Attempt processed.")
 
 
 result = read_input(prompt, lower, upper)
